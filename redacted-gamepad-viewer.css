@@ -1,37 +1,18 @@
-/*
-Gamepad Viewer custom skin starter
-Controller: PS4 / DualShock 4
-Upload this CSS + redacted-controller.png somewhere public, then use the CSS URL in Gamepad Viewer.
-
-If hosting both files in the same folder, leave the image URL as:
-url("redacted-controller.png")
-*/
-
 .controller.ds4 {
   background: url("redacted-controller.png") no-repeat center center !important;
   background-size: contain !important;
   width: 1536px !important;
   height: 864px !important;
+  position: relative !important;
 }
 
-/* Hide default controller art */
-.controller.ds4.disconnected,
-.controller.ds4 .back,
-.controller.ds4 .touchpad,
-.controller.ds4 .meta,
-.controller.ds4 .arrows,
-.controller.ds4 .abxy,
-.controller.ds4 .sticks,
-.controller.ds4 .bumpers,
-.controller.ds4 .triggers,
-.controller.ds4 .quadrant {
-  background: none !important;
+.controller.ds4 * {
+  background-image: none !important;
 }
 
-/* Keep inputs invisible by default */
 .controller.ds4 .button,
-.controller.ds4 .stick,
 .controller.ds4 .face,
+.controller.ds4 .stick,
 .controller.ds4 .bumper,
 .controller.ds4 .trigger,
 .controller.ds4 .arrow,
@@ -40,18 +21,16 @@ url("redacted-controller.png")
   opacity: 0 !important;
 }
 
-/* Optional: show pressed buttons as a red glow */
-/* Hide all default button press graphics */
-.controller.ds4 .pressed,
-.controller.ds4 .button.pressed,
-.controller.ds4 .face.pressed,
-.controller.ds4 .stick.pressed,
-.controller.ds4 .bumper.pressed,
-.controller.ds4 .trigger.pressed,
-.controller.ds4 .arrow.pressed {
-  opacity: 0 !important;
-  display: none !important;
-/* Optional: hide player number / extra UI */
+/* Press glow */
+.controller.ds4 .pressed {
+  opacity: 1 !important;
+  display: block !important;
+  background: rgba(255, 0, 0, 0.45) !important;
+  border-radius: 50% !important;
+  box-shadow: 0 0 25px red !important;
+}
+
+/* Hide player lights */
 .controller.ds4 .p0,
 .controller.ds4 .p1,
 .controller.ds4 .p2,

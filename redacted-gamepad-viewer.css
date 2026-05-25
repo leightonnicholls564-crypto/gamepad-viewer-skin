@@ -36,4 +36,36 @@
 .controller.ds4 .p2,
 .controller.ds4 .p3 {
   display: none !important;
+  /* Make pressed buttons movable */
+.controller.ds4 .pressed {
+  position: absolute !important;
+  opacity: 1 !important;
+  display: block !important;
+  background: rgba(255, 0, 0, 0.45) !important;
+  border-radius: 50% !important;
+  box-shadow: 0 0 25px red !important;
+  width: 70px !important;
+  height: 70px !important;
 }
+
+/* Face buttons - adjust left/top numbers */
+.controller.ds4 .a.pressed { left: 1225px !important; top: 420px !important; } /* X */
+.controller.ds4 .b.pressed { left: 1320px !important; top: 330px !important; } /* Circle */
+.controller.ds4 .x.pressed { left: 1130px !important; top: 330px !important; } /* Square */
+.controller.ds4 .y.pressed { left: 1225px !important; top: 240px !important; } /* Triangle */
+
+/* D-pad */
+.controller.ds4 .up.pressed { left: 310px !important; top: 260px !important; }
+.controller.ds4 .down.pressed { left: 310px !important; top: 430px !important; }
+.controller.ds4 .left.pressed { left: 220px !important; top: 350px !important; }
+.controller.ds4 .right.pressed { left: 400px !important; top: 350px !important; }
+
+/* Sticks */
+.controller.ds4 .stick.left.pressed { left: 500px !important; top: 515px !important; }
+.controller.ds4 .stick.right.pressed { left: 930px !important; top: 515px !important; }
+
+/* Triggers / bumpers */
+.controller.ds4 .bumper.left.pressed { left: 300px !important; top: 60px !important; }
+.controller.ds4 .bumper.right.pressed { left: 1180px !important; top: 60px !important; }
+.controller.ds4 .trigger.left.pressed { left: 300px !important; top: 20px !important; }
+.controller.ds4 .trigger.right.pressed { left: 1180px !important; top: 20px !important; }

@@ -41,11 +41,16 @@ url("redacted-controller.png")
 }
 
 /* Optional: show pressed buttons as a red glow */
-.controller.ds4 .pressed {
-  opacity: 1 !important;
-  filter: drop-shadow(0 0 12px red) brightness(1.5);
-}
-
+/* Hide all default button press graphics */
+.controller.ds4 .pressed,
+.controller.ds4 .button.pressed,
+.controller.ds4 .face.pressed,
+.controller.ds4 .stick.pressed,
+.controller.ds4 .bumper.pressed,
+.controller.ds4 .trigger.pressed,
+.controller.ds4 .arrow.pressed {
+  opacity: 0 !important;
+  display: none !important;
 /* Optional: hide player number / extra UI */
 .controller.ds4 .p0,
 .controller.ds4 .p1,

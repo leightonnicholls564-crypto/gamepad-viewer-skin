@@ -1,9 +1,13 @@
 .controller.ds4 {
- background: url("https://leightonnicholls564-crypto.github.io/gamepad-viewer-skin/redacted-controller.png") no-repeat center center !important;
+  background: url("...") no-repeat center center !important;
   background-size: contain !important;
   width: 800px !important;
   height: 600px !important;
   position: relative !important;
+  transform: scale(0.75);
+  transform-origin: top center;
+  margin-top: 120px;
+}
 }
 
 .controller.ds4 * {

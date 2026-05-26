@@ -1,8 +1,8 @@
 .controller.ds4 {
-  background: url("...") no-repeat center center !important;
+  background: url("...") no-repeat center top !important;
   background-size: contain !important;
   width: 800px !important;
-  height: 600px !important;
+  height: 900px !important;
   position: relative !important;
   transform: scale(0.75);
   transform-origin: top center;
